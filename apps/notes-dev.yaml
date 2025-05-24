@@ -8,7 +8,7 @@ spec:
 
   source:
     repoURL: https://github.com/dineshsai07/devops-gitops-lab.git
-    targetRevision: main
+    targetRevision: master
     path: infra
 
   destination:
