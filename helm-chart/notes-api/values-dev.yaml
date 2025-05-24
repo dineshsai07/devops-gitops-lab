@@ -1,0 +1,23 @@
+# helm-chart/notes-api/values-dev.yaml
+
+# number of replicas in dev
+replicaCount: 1
+
+# Docker image to use (built by Jenkins or locally tagged)
+image:
+  repository: notes-api
+  tag: "dev"        # or the specific version/build ID
+  pullPolicy: IfNotPresent
+
+# Service port (matches your Dockerfile's EXPOSE)
+service:
+  port: 80
+
+# Optional: resource requests & limits
+resources:
+  requests:
+    cpu: 100m
+    memory: 64Mi
+  limits:
+    cpu: 200m
+    memory: 128Mi
